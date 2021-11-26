@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tính điểm Đại học khối D </title>
+</head>
+<body>
+    <script>
+        //let number = +prompt("Nhập vào 1 số:");
+        //let isEven = number % 2 == 0; //đặt biến cho biểu thức
+        //if(isEven){ //if thiếu
+
+        //if(number%2 == 0){ //if thiếu, trả về dữ liệu blooling
+           // alert("Đây là số chẵn")
+        //}
+        //}else{ //các trường hợp còn lại - if đủ
+           // alert("Đây không phải số chẵn")
+
+        //}
+
+
+        //Nhập vào thứ, hiển thị ra đây ngày đi làm hoặc ngày nghỉ
+        let month = prompt("Tháng này là tháng mấy");
+
+        //if(day ==2){ // nếu dùng if sẽ là 7 trường hợp
+            //alert("Ngày đi làm");
+        //switch(day){
+            //case "2":
+            //case "3":
+            //case "4":
+            //case "5":
+            //case "6":
+                //alert("Ngày đi làm");
+               // break;
+            //case "7":
+               // alert("Ngày nghỉ");
+               // break;
+            //case "Chủ nhật":
+                //alert("Ngày ngủ");
+               // break;
+            //default :
+                //alert("Hành tinh này không có ngày này");
+
+        //}
+
+        //Hiển thị số ngày của 1 tháng bằng switch case : nhập vào số tháng và hiển thị ra số ngày của tháng đó
+        //1,3,5,7,8,10,12 - 31 ngày
+        //4,6,9,11 - 30 ngày
+        //2 - 28 ngày
+        // khavs 1 - 12 : Trả đĩa bay
+         switch(month){
+             case "1":
+             case "3":
+             case "5":
+             case "7":   
+             case "8":
+             case "10":
+             case "12":
+                 alert("Tháng có 31 ngày");
+                 break;
+            case "4":
+            case "6":
+            case "9":
+            case "11":
+                alert("Tháng có 30 ngày");
+                break;
+            case "2":
+                let namNhuan = confirm("Năm nay có phải nhuận không?") //confirm trả về kiểu dữ liệu là boolean
+                if(namNhuan){
+                    alert("Tháng này có 29 ngày");
+                }else{
+                alert("Tháng có 28 ngày");
+                }
+                break;
+            default :
+                alert("Trả đĩa bay đây !");
+         }
+
+
+        
+    </script>
+</body>
+</html>

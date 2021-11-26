@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM </title>
+</head>
+<body>
+    <input id="demo" name="abc" value="def" style="color: aqua;">
+    <a  id="demo-link" href="">Demo Link</a>
+    <h1 id="title"> Day la tieu de</h1>
+    <img width="200px" id ="traffic-light" src="red.jpeg" alt="" >
+
+<script>
+        //let a = document.getElementById("demo"); //lấy giá trị ở thẻ value
+        //a.style.color = "red";
+        //alert(a);
+        //let link =document.getElementById("demo-link");
+        //link.href ="https://google.com";
+
+
+       
+       //let tag = document.createElement("p"); // lúc này tạo rồi nhưng chưa đưa vào bên trong body
+       //document.body.append(tag); //dùng để đưa vào bên trong body
+       //console.log(tag);
+       //tag.innerText = "Tạo thẻ P cho HTML";
+      // tag.setAttribute("id","demo2");
+      // tag.addEventListener("click",alert("Hello"));
+
+       function changeColor(event){
+           let key= event.key;
+           let title =document.getElementById("title");
+           let trafficLight = document.getElementById("traffic-light"); //đặt tên biến theo camel : vd : dayOfMonth/ sumOfNumber
+           if(key == "a"){
+               title.style.color ="red";
+               title.innerText ="Đèn đỏ";
+               trafficLight.src ="red.jpeg";
+            
+            
+           }
+           if(key == "d"){
+               title.style.color="yellow"
+               title.innerHTML ="Đèn vàng";
+               trafficLight.src ="yellow.png";
+           }
+           if(key == "w"){
+               title.style.color="green";
+               title.innerText ="Đèn xanh";
+               trafficLight.src ="green.jpeg";
+            
+
+           }
+           
+    }
+             
+    window.addEventListener("keydown",changeColor);
+ </script>
+ 
+</body>
+</html>

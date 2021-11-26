@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pikachu </title>
+</head>
+<body style="position: relative;"> <!---->
+    <img id="pika" src="pikachu.png" width="150px" alt="Ảnh pikachu" style="position:absolute; left: 150px; top: 100px;">
+</body>
+<script>
+
+    function movePikachu(event){
+
+        let key = event.key;
+
+        let pika = document.getElementById("pika");
+        let left = parseInt(pika.style.left);
+        let top = parseInt(pika.style.top);
+
+        console.log(left);
+
+        if(key == "d"){
+            left= left + 10; //+10 sang phải
+            pika.style.left = left + "px";
+        }
+        if(key == "w"){
+            left = left - 10; // -10 là sang trái
+            pika.style.left = left + "px";
+
+        }
+        if(key == "a"){
+            top = top + 20;
+            pika.style.top = top + "px";
+        }
+        if(key == "s"){
+            top = top -20;
+            pika.style.top = top + "px";
+        }
+
+
+        
+    }
+    window.addEventListener("keydown",movePikachu);
+
+</script>
+</html>
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LOOP </title>
+</head>
+<body>
+    <script>
+
+        //let soLuongao = 0;
+//while(soLuongao <100){
+    //soLuongao++;
+    //document.write("Đã làm được"+soLuongao+"cái áo"<br>);
+
+//}
+//lặp không biết trước số lượng lặp 
+//Lặp không biết trước số lần lặp nhưng biết điều kiện lặp
+//lặp theo giờ hành chính : 8h30-17hh30
+
+//for(let i = 0; i<=10; i ++){ //đủ
+    //document.write(i);
+//} 
+
+//let i = 0; //thiếu biến đếm
+//for (;i<=10; i++){
+    //document.write(i);
+
+//}
+
+//let i = 0; //thiếu bước nhảy
+//for(;i<=10;){
+        //document.write(i);
+        //i++;
+//}
+
+//let i = 0; // thiếu cả 3
+//for(;;){
+    //if(i<=10){
+       // document.write(i);
+       // i++; phải để i++ vào bên trong if nếu kh sẽ rơi vào vô hạn
+        //}
+   // }
+
+
+
+//=>
+
+     let i=0; 
+     while(true){ //luôn phải có giá trị đúng, phải là kiểu dữ liệu boolean
+         if(i<=10){
+             if(i%2 ==0){
+                i++;
+               continue; //bỏ qua tất cả những câu lệnh phía sau
+        }
+        document.write(i);
+        i++;
+    }else{
+        break;
+    }
+}
+
+    </script>
+  
+</body>
+
+</html>

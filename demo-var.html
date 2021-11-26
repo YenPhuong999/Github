@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quy đổi tiền tệ </title>
+</head>
+<style>
+    input,select{
+        background: transparent;
+        border-radius: 6px;
+        border: 2px solid #5f6368;
+        color :rgb(25, 14, 179);
+        font-size: 14px;
+        height: 36px;
+        padding: 0 0 0 12px;
+
+        
+    }
+</style>
+<body>
+    <input type="text" oninput="convertMoney() " id="dau-vao">
+
+    <select id="from-curency">
+        <option value="1">USD</option>
+        <option value="23000">VND</option>
+        <option value="0.86">EURO</option>
+    </select>
+
+    
+    <br>
+    <br>
+    <input type="text" id="dau-ra">
+    <select id="to-curency">
+        <option value="1">USD</option>
+        <option value="23000">VND</option>
+        <option value="0.86">EURO</option>
+    </select>
+    <p> Số tiền đổi được là :</p>
+    <p id ="kq"></p>
+
+   <!--<button onclick="convertMoney()">Chuyển đổi</button>--> <!--thay nút bằng oninput cho nhảy số tự động-->
+
+</body>
+<script>
+    function convertMoney(){
+        let moneyInput = document.getElementById("dau-vao"); //đại diện cho input id đầu vào
+        let from = document.getElementById("from-curency");
+        let to = document.getElementById("to-curency");
+        let kq = 0;
+        // alert(from.options[from.selectedIndex].text) cách dài
+        //alert(from.value); //cách ngắn gọn do đã khai báo let from
+        kq = moneyInput.value * to.value / from.value;
+        //alert(kq); bỏ alert mới không hiển thị ra bảng
+        document.getElementById("dau-ra").value = kq;
+        document.getElementById("kq").innerText = kq ; //innerHTML
+    }
+     //let x = 83;
+     //let y = 9;
+     //x%=y;
+     //console.log(x);
+
+</script>
+</html>

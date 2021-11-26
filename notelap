@@ -1,0 +1,20 @@
+2 loại cú pháp
+-For
+  -được dùng cho trường hợp biết trước số lần lặp
+  -For(khởi tạo biến đếm : điều kiện lặp, bước nhảy){
+      //Khối lệnh lặp
+  }
+  -Hiển thị số từ 0 đến 10
+  For(let i = 0; i <=10; i++){
+      document.write(i);
+  }
+-While
+không biết trước số vòng lặp (chỉ biết đk)
+dùng cả được cho biết trước số vòng lặp
+While (điều kiện lặp - boolean){
+    //khôi lệnh lặp
+    //thay đổi biến đếm
+}
+
+-2 câu lênhj điều khiển vòng lặp :
+     -break; //dùng vòng lặp gần nhất

@@ -1,0 +1,20 @@
+1. viết 1 chương trình chuyển đổi tiền tệ với đầu vào là số tiền, đơn vị tiền tệ chuyển đơn vị tiền tệ muốn chuyển thành : 
+=>
+input: 3-USD-VND
+OUTPUT : 67,937
+
+B1 : xây dựng giao diện
+B2: Khai báo các biến cần thiết
+ -input
+ -OUTPUT
+B3 : tiền đô x tỉ giá = kết quả
+
+Tiền/tỉ giá 1 = kết quả / tỉ giá 2 ;
+vd : 3/1 = 69000/23000
+3/1 = 2.59/0.86 
+2.59/0.86= 69000/23000
+
+vd : a/b = c/d => c = a.d/b
+B1 : TRỎ ĐẾN THẺ ĐÓ
+B2 : TRỎ ĐẾN THUỘC TÍNH CẦN THAY ĐỔI GIÁ TRỊ
+B3 : DÙNG TOÁN TỬ GÁN
